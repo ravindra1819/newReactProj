@@ -1,13 +1,13 @@
 import './App.css'
-import Sidebar from './GOGinterview/Sidebar'
+import ButtonDisplay from './GOGPractice/ButtonDisplay'
 
 function App() {
 
   return (
     <>
-      <Sidebar />
+    <h1>Hello...!</h1>
+    <ButtonDisplay />
     </>
   )
 }
-
 export default App
