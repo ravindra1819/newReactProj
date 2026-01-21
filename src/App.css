@@ -1,4 +1,4 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -11,9 +11,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -22,6 +24,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -39,4 +42,42 @@
 
 .read-the-docs {
   color: #888;
+} */
+
+.SideBox {
+  border: 2px solid #000;
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 150px;
 }
+
+.Content {
+  border: 2px solid #000;
+  margin: 10px;
+  padding: 10px;
+  width: 320px;
+  min-height: 260px;
+  position: relative;
+}
+
+/* Common card styles */
+.Content1,
+.Content2,
+.Content3,
+.Content4 {
+  position: relative;
+  width: 80%;
+  height: 20%;
+  padding: 12px;
+  background: #fff;
+  border: 1px solid #000;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Stack offsets */
+.Content1 { top: 0px; }
+.Content2 { top: -20px; left: 10px; }
+.Content3 { top: -40px; left: 20px; }
+.Content4 { top: -60px; left: 30px; } 
