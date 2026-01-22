@@ -1,11 +1,11 @@
 import './App.css'
-import ButtonDisplay from './GOGPractice/ButtonDisplay'
+import DisplayBox from './Practice1/DisplayBox'
 
 function App() {
 
   return (
     <>
-    <ButtonDisplay />
+    <DisplayBox />
     </>
   )
 }

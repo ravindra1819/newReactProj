@@ -44,7 +44,9 @@
   color: #888;
 } */
 
-.SideBox {
+/* GOGPractice Styles */
+
+/* .SideBox {
   border: 2px solid #000;
   margin: 10px;
   padding: 5px;
@@ -63,7 +65,7 @@
 }
 
 /* Common card styles */
-.Content1,
+/* .Content1,
 .Content2,
 .Content3,
 .Content4 {
@@ -77,7 +79,54 @@
 }
 
 /* Stack offsets */
-.Content1 { top: 0px; }
+/* .Content1 { top: 0px; }
 .Content2 { top: -20px; left: 10px; }
 .Content3 { top: -40px; left: 20px; }
-.Content4 { top: -60px; left: 30px; } 
+.Content4 { top: -60px; left: 30px; }  */
+
+/* DisplayBox Styles */
+
+.DBMain{
+  width: 50%;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: black;
+  display: flex;
+  margin: 2%;
+}
+
+.DBchild1, .DBchild2, .DBchild3, .DBchild4 {
+  width: 25%;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: black;
+}
+
+.DBchild1:disabled,
+.DBchild2:disabled,
+.DBchild3:disabled,
+.DBchild4:disabled
+{
+ background-color: white;
+}
+
+.DBchild1{
+background-color: rgb(125, 125, 189);
+}
+.DBchild2{
+background-color: green;
+}
+.DBchild3{
+background-color: pink;
+}
+.DBchild4{
+background-color: violet;
+}
+
+.DColor {
+  width: 50%;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: black;
+  margin: 2%;
+}
