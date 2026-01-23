@@ -1,11 +1,12 @@
 import './App.css'
-import DisplayBox from './Practice1/DisplayBox'
+import CarouselDisplay from './carousel/CarouselDisplay'
+import './carousel/carousel.css'
 
 function App() {
 
   return (
     <>
-    <DisplayBox />
+      < CarouselDisplay />
     </>
   )
 }
