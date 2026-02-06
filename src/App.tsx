@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './App.css'
 // import './carousel/carousel.css'
 import { useCounter } from './TypeScriptPractice/counter'
@@ -7,10 +8,26 @@ function App() {
     initialValue: 10,
     step: 2
   })
-
   // type AddFn = (a : number , b: number) => number;
   // const add : AddFn = (a,b) => a + b;
-  const add = (a: number, b: number): number => a + b;
+  const add = (a: number, b: number): number => {
+    if(a && b){
+return a + b
+    }
+    else{
+      return 0;
+    }
+    };
+  const [inputA, setInputA] = useState<number>();
+  const [inputB, setInputB] = useState<number>();
+
+  const handleAddA = (inputA : number) => {
+    setInputA(inputA)
+  };
+
+  const handleAddB = (inputB : number) => {
+    setInputB(inputB)
+  };
 
   return (
     <div>
@@ -23,7 +40,17 @@ function App() {
         <button onClick={reset}>Reset</button>
       </div>
       <div>
-        <p> add : {add(2, 3)}</p>
+        <p>{add(inputA ?? 0, inputB ?? 0)}</p>
+        <input
+          type="number"
+          placeholder="Enter Number"
+          onChange={(e) => handleAddA(e.target.value === '' ? 0 : Number(e.target.value))}
+        />
+        <input
+          type="number"
+          placeholder="Enter Number"
+          onChange={(e) => handleAddB(e.target.value === '' ? 0 : Number(e.target.value))}
+        />
       </div>
     </div>
   )
