@@ -8,6 +8,7 @@ function App() {
     initialValue: 10,
     step: 2
   })
+  console.log("inside of:", count);
   // type AddFn = (a : number , b: number) => number;
   // const add : AddFn = (a,b) => a + b;
   const add = (a: number, b: number): number => {
