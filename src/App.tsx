@@ -13,6 +13,7 @@ function App() {
   // const add : AddFn = (a,b) => a + b;
   const add = (a: number, b: number): number => {
     if(a && b){
+      console.log("inside of:", a , b)
 return a + b
     }
     else{
